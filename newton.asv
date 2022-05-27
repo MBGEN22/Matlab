@@ -1,0 +1,13 @@
+close all ; clc ; 
+f=inline('sin(2*x)+x-1') , df=inline('1+2*cos(2*x)')
+a=-4 ; b=4 ; err=10^-4 ;k=1; kmax=100;
+x=0;
+while(abs(f(x))>err && k<=kmax)
+    x= x-f(x)/df(x);
+    k=k+1 ;
+    f(x)
+    e(k)=f(x)
+end 
+k=1:length(e)
+k 
+x 
